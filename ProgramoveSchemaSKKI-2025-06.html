@@ -1,0 +1,480 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+ <meta charset="UTF-8">
+ <title>Programové schéma SKKI (LS 2024/2025)</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ padding: 20px;
+ background-color: #f8f8f8;
+ }
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-top: 20px;
+ }
+ th, td {
+ padding: 10px;
+ text-align: left;
+ border-bottom: 1px solid #ddd;
+ vertical-align: top;
+ }
+ th {
+ background-color: #007BFF;
+ color: white;
+ }
+ tr:hover {
+ background-color: #f1f1f1;
+ }
+ .filter {
+ margin-bottom: 10px;
+ }
+ 
+ .type-akademicky {
+ background-color: #e3f2fd;
+ }
+ 
+ .type-partnersky {
+ background-color: #e8f5e9;
+ }
+ 
+ .type-studentsky {
+ background-color: #fff9e6;
+ }
+ 
+ </style>
+ <script>
+ function filterTable() {
+ var input = document.getElementById("searchInput").value.toLowerCase();
+ var table = document.getElementById("programTable");
+ var trs = table.getElementsByTagName("tr");
+
+ for (var i&nbsp;= 1; i&nbsp;< trs.length; i++) {
+ let row = trs[i];
+ let text = row.innerText.toLowerCase();
+ row.style.display = text.includes(input) ? "" : "none";
+ }
+ }
+ </script>
+</head>
+<body>
+ <h1>Programové schéma SKKI (LS 2024/2025)</h1> 
+ <p>Místo konání: <strong>CP-1.03</strong> (v&nbsp;budově <a href="https://prf.ujep.cz/cs/cpto" target="_blank" rel="noopener noreferrer">Centra přírodovědných a&nbsp;technických oborů</a>)</p>
+ <input type="text" id="searchInput" onkeyup="filterTable()" placeholder="Hledat v&nbsp;programu..." class="filter">
+ <table id="programTable">
+ <thead>
+ <tr>
+ <th>Datum</th>
+ <th>Od</th>
+ <th>Do</th>
+ <th>Přednášející</th>
+ <th>Název příspěvku</th>
+ <th>Typ</th>
+ </tr>
+ </thead>
+ <tbody>
+
+ <tr class="type-akademicky">
+ <td>18.&nbsp;6. (st)</td>
+ <td>10:30</td>
+ <td>11:00</td>
+ <td>Mgr. Jiří Fišer, Ph.D.</td>
+ <td>Vše, co potřebujete vědět o&nbsp;požadavcích na závěrečné práce<br>(volba tématu, podoba zadání aj. + otázky a&nbsp;odpovědi)</td>
+ <td>akademický</td>
+ </tr>
+ 
+ <tr class="type-partnersky">
+ <td>18.&nbsp;6. (st)</td>
+ <td>11:00</td>
+ <td>11:15</td>
+ <td>Povrly Copper Industries a.s.</td>
+ <td>Témata pro závěrečné práce a&nbsp;studentské projekty</td>
+ <td>partnerský</td>
+ </tr>
+ 
+ <tr class="type-partnersky">
+ <td>18.&nbsp;6. (st)</td>
+ <td>11:15</td>
+ <td>11:40</td>
+ <td>Datové centrum ústeckého kraje</td>
+ <td>Témata pro závěrečné práce a&nbsp;studentské projekty</td>
+ <td>partnerský</td>
+ </tr>
+ 
+ <tr class="type-partnersky">
+ <td>18.&nbsp;6. (st)</td>
+ <td>11:40</td>
+ <td>11:55</td>
+ <td>Pierburg s.r.o.</td>
+ <td>Témata pro závěrečné práce a&nbsp;studentské projekty</td>
+ <td>partnerský</td>
+ </tr>
+ 
+ <tr class="type-akademicky">
+ <td>18.&nbsp;6. (st)</td>
+ <td>12:00</td>
+ <td>12:20</td>
+ <td>Ing. Jan Burle, Ph.D.</td>
+ <td>Témata pro závěrečné práce a&nbsp;studentské projekty</td>
+ <td>akademický</td>
+ </tr>
+ 
+ <tr class="">
+ <td>18.&nbsp;6. (st)</td>
+ <td>12:20</td>
+ <td>13:00</td>
+ <td></td>
+ <td>obědová pauza</td>
+ <td></td>
+ </tr>
+ 
+ <tr class="type-akademicky">
+ <td>18.&nbsp;6. (st)</td>
+ <td>13:00</td>
+ <td>13:30</td>
+ <td>doc. RNDr. Zbyšek Posel, Ph.D.<br>Pavel Falta</td>
+ <td>Představení Oddělení pro datovou analýzu a&nbsp;simulace</td>
+ <td>akademický</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>18.&nbsp;6. (st)</td>
+ <td>13:30</td>
+ <td>13:45</td>
+ <td>Adam Heger</td>
+ <td>Serverová část aplikace pro správu testů pro střední školy</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>18.&nbsp;6. (st)</td>
+ <td>13:45</td>
+ <td>14:00</td>
+ <td>Adam Jirotka</td>
+ <td>Webová aplikace pro správu testů pro střední školy</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>18.&nbsp;6. (st)</td>
+ <td>14:00</td>
+ <td>14:15</td>
+ <td>Bc. Jan Plechatý</td>
+ <td>Webová aplikace pro nemocniční správu dat</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>18.&nbsp;6. (st)</td>
+ <td>14:15</td>
+ <td>14:30</td>
+ <td>BcA. et Bc. Vlasta Michalcová</td>
+ <td>Mobilní telefony jako zařízení pro běh ML modelů</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>18.&nbsp;6. (st)</td>
+ <td>14:30</td>
+ <td>14:45</td>
+ <td>Bc. Martina Kukačková</td>
+ <td>Automatizace definice produktového koše u&nbsp;dopočtového procesu</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>18.&nbsp;6. (st)</td>
+ <td>14:45</td>
+ <td>15:00</td>
+ <td>Richard Plecháč</td>
+ <td>Metodika a&nbsp;dokumentace pro testování použitelnosti uživatelského rozhraní</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>18.&nbsp;6. (st)</td>
+ <td>15:00</td>
+ <td>15:15</td>
+ <td>Danil Korchagin</td>
+ <td>Optimalizace ETL procesů pro Big Data pomocí Apache Airflow a Apache Spark</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>18.&nbsp;6. (st)</td>
+ <td>15:15</td>
+ <td>15:30</td>
+ <td>Radek Černý</td>
+ <td>Tvorba didaktických cvičení pro výuku základů algoritmizace a programování za pomoci Sonic Pi a&nbsp;Pythonu</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>18.&nbsp;6. (st)</td>
+ <td>15:30</td>
+ <td>15:45</td>
+ <td>Ngoc Huy Vu</td>
+ <td>Porovnání a&nbsp;analýza SQL a&nbsp;NoSQL databázových systémů ve skladovém hospodářství malých podniků</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>18.&nbsp;6. (st)</td>
+ <td>15:45</td>
+ <td>16:00</td>
+ <td>Josef Bér</td>
+ <td>Digital Twin</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>18.&nbsp;6. (st)</td>
+ <td>16:00</td>
+ <td>16:20</td>
+ <td>Natálie Růtová
+Jan Čmuchař</td>
+ <td>Social VR</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>09:30</td>
+ <td>09:45</td>
+ <td>Radek Šmejkal</td>
+ <td>Prototyp aplikace pro zobrazení digitálních dvojčat stavebních projektů v&nbsp;rozšířené realitě</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>09:45</td>
+ <td>10:00</td>
+ <td>Martin Formánek</td>
+ <td>Porovnání databázových systémů pro zpracování časových řad</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>10:00</td>
+ <td>10:15</td>
+ <td>Pavel Kuzma</td>
+ <td>Schellingův model segregace: agentní rozhodování pomocí velkých jazykových modelů</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>10:15</td>
+ <td>10:30</td>
+ <td>Adam Budiš</td>
+ <td>Aplikace pro správu 5S auditu ve strojírenské firmě</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>10:30</td>
+ <td>10:45</td>
+ <td>Adéla Svítilová</td>
+ <td>NVIDIA TAO Toolkit</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>10:45</td>
+ <td>11:30</td>
+ <td>Anna Trejdlová
+Marie Kleckerová</td>
+ <td>VR Cognitive therapy + vyzkoušení si demoverze</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>11:30</td>
+ <td>11:45</td>
+ <td>Thanh Tung Pham</td>
+ <td>Vývoj interaktivních videoher pro použití v&nbsp;PR kampaních</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>11:45</td>
+ <td>12:00</td>
+ <td>Alex Schönfelder</td>
+ <td>Statistické zpracování vztahů mezi kvalitou ovzduší a&nbsp;dopravní situací v&nbsp;Bílině</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>12:00</td>
+ <td>12:30</td>
+ <td>Bc. Radek Pleticha</td>
+ <td>Porovnání metod pro hledání povrchu hladiny v&nbsp;granulárních systémech</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>12:30</td>
+ <td>12:45</td>
+ <td>Jakub Moravec</td>
+ <td>Automatizace procesu nasazení a&nbsp;správy serverů pomocí PowerShellu v&nbsp;prostředí hypervizoru</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>12:45</td>
+ <td>13:00</td>
+ <td>Mykhailo Pastram<br>Serhii Meloshyn<br>Aliya Askarkyzy<br>Hlib Zahorskyi</td>
+ <td>Mattermost - služba pro správu projektů</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>13:00</td>
+ <td>14:00</td>
+ <td></td>
+ <td>obědová pauza</td>
+ <td></td>
+ </tr>
+ 
+ <tr class="type-akademicky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>14:00</td>
+ <td>14:30</td>
+ <td>Ing. Mgr. Pavel Beránek<br>Mgr. et Mgr. Adam Vojtěch, MHA<br>doc. MUDr. Jiří Kofránek, CSc.<br>doc. Ing. Vojtěch Merunka, Ph.D.</td>
+ <td>Témata pro závěrečné práce a&nbsp;studentské projekty</td>
+ <td>akademický</td>
+ </tr>
+ 
+ <tr class="type-partnersky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>14:30</td>
+ <td>14:50</td>
+ <td>COM PLUS CZ a.s.</td>
+ <td>Témata pro závěrečné práce a&nbsp;studentské projekty</td>
+ <td>partnerský</td>
+ </tr>
+ 
+ <tr class="type-akademicky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>14:50</td>
+ <td>15:05</td>
+ <td>Mgr. Pavel Petrus</td>
+ <td>Témata pro závěrečné práce a&nbsp;studentské projekty</td>
+ <td>akademický</td>
+ </tr>
+ 
+ <tr class="type-akademicky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>15:05</td>
+ <td>15:25</td>
+ <td>RNDr. Jan Krejčí, Ph.D.</td>
+ <td>Témata pro závěrečné práce a&nbsp;studentské projekty</td>
+ <td>akademický</td>
+ </tr>
+ 
+ <tr class="">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>15:30</td>
+ <td>16:30</td>
+ <td>Ing. Mgr. Pavel Beránek</td>
+ <td>Teorie designu videoher</td>
+ <td>popularizační</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>16:30</td>
+ <td>16:45</td>
+ <td>Kateryna Shutiak</td>
+ <td>Deepfake technologie a&nbsp;její dopad na psychiku dětí</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>16:45</td>
+ <td>17:00</td>
+ <td>Petr Göckert</td>
+ <td>Kyberbezpečnostní hra pro základní školy vytvořená pomocí frameworku Phaser</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>17:00</td>
+ <td>17:15</td>
+ <td>Daniel Říha</td>
+ <td>Autoevoluce softwaru pomocí autonomních agentů řízených velkým jazykovým modelem</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>17:15</td>
+ <td>17:30</td>
+ <td>Tomáš Ulrich</td>
+ <td>FAIR data a&nbsp;persistentní identifikátory</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>17:30</td>
+ <td>17:45</td>
+ <td>Filip Stehlík</td>
+ <td>Vliv teplotního parametru na podobnost a&nbsp;kvalitu kódu generovaného velkými jazykovými modely v&nbsp;Pythonu</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>17:45</td>
+ <td>18:00</td>
+ <td>Ladislav Tahal</td>
+ <td>Využití open-source a&nbsp;komerčních nástrojů pro vizualizaci a&nbsp;analýzu dat na datové platformě Portabo</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>18:00</td>
+ <td>18:10</td>
+ <td>Jan Viola</td>
+ <td>Analýza, návrh a&nbsp;specifikace systému pro správu odborných praxí studentů na UJEP</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>18:10</td>
+ <td>18:20</td>
+ <td>Martin Vlnas</td>
+ <td>Návrh a&nbsp;implementace klientské části webové aplikace pro správu odborných praxí studentů</td>
+ <td>studentský</td>
+ </tr>
+ 
+ <tr class="type-studentsky">
+ <td>19.&nbsp;6. (čt)</td>
+ <td>18:20</td>
+ <td>18:40</td>
+ <td>Ing. Ladislav Perk</td>
+ <td>Žákovské programování při řešení vybraných netradičních matematických úloh</td>
+ <td>studentský</td>
+ </tr>
+ 
+ </tbody>
+ </table>
+</body>
+</html>
